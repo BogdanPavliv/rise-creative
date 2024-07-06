@@ -1,0 +1,228 @@
+/* ==================================================================================== */
+
+html,body{
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  background-color: #F3F4F6;
+  color: #555;
+  font-family: 'Inter-regular', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+*,*:before,*:after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+  text-decoration: none;
+}
+
+a:hover  {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+font-weight: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+ul, ul li {
+list-style: none;
+}
+
+img {
+  display: block;
+}
+
+img {
+vertical-align: top;
+}
+
+img, svg {
+max-width: 100%;
+height: auto;
+}
+
+address {
+font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+display: none;
+}
+
+button, input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+padding: 0;
+border: 0;
+}
+
+label {
+cursor: pointer;
+}
+
+legend {
+display: block;
+}
+
+input[type=email],input[type=tel],input[type=text],textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* ==================================================================================== */
+
+@font-face {
+  font-family: 'Itc-medium', sans-serif;
+  src: url('./fonts/ITC Avant Garde Gothic Std Medium.eot') format('eot'),
+       url('./fonts/ITC Avant Garde Gothic Std Medium.otf') format('otf'),
+       url('./fonts/ITC Avant Garde Gothic Std Medium.woff2') format('woff2'),
+       url('./fonts/ITC Avant Garde Gothic Std Medium.woff') format('woff'),
+       url('./fonts/ITC Avant Garde Gothic Std Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Itc-bold', sans-serif;
+  src: url('./fonts/ITC Avant Garde Gothic Std Bold.eot') format('eot'),
+       url('./fonts/ITC Avant Garde Gothic Std Bold.otf') format('otf'),
+       url('./fonts/ITC Avant Garde Gothic Std Bold.woff2') format('woff2'),
+       url('./fonts/ITC Avant Garde Gothic Std Bold.woff') format('woff'),
+       url('./fonts/ITC Avant Garde Gothic Std Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-light', sans-serif;
+  src: url('./fonts/Inter-Light.eot') format('eot'),
+       url('./fonts/Inter-Light.otf') format('otf'),
+       url('./fonts/Inter-Light.woff2') format('woff2'),
+       url('./fonts/Inter-Light.woff') format('woff'),
+       url('./fonts/Inter-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Inter-regular', sans-serif;
+  src: url('./fonts/Inter-Regular.eot') format('eot'),
+       url('./fonts/Inter-Regular.otf') format('otf'),
+       url('./fonts/Inter-Regular.woff2') format('woff2'),
+       url('./fonts/Inter-Regular.woff') format('woff'),
+       url('./fonts/Inter-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-medium', sans-serif;
+  src: url('./fonts/Inter-Medium.eot') format('eot'),
+       url('./fonts/Inter-Medium.otf') format('otf'),
+       url('./fonts/Inter-Medium.woff2') format('woff2'),
+       url('./fonts/Inter-Medium.woff') format('woff'),
+       url('./fonts/Inter-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-right {
+	overflow-x: hidden;
+	padding-left: calc(
+		(100% - 1310px) / 2 + 15px
+	);
+}
+
+@media (max-width: 1290px) {
+  .container-right {
+    padding-left: 15px;
+		padding-right: 15px;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Itc-bold', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 56px;
+  color: #24272E;
+  margin-top: 24px;
+}
+
+.section-text {
+  font-family: 'Inter-regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #555C68;
+  margin-top: 16px;
+}
