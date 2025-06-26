@@ -1,0 +1,126 @@
+.clients_kind {
+    overflow: hidden;
+}
+
+.clients_kind__slider__wrapper {
+    margin-top: 80px;
+    
+}
+
+.clients_kind__slide {
+    padding: 32px 60px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #D2D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #101C26;
+}
+
+.swiper-horizontal > .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+}
+
+.clients_kind__slide__img {
+    margin: 0 auto;
+}
+
+.clients_kind__slide__name {
+    font-family: 'Itc-medium', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.clients_kind__slide__role {
+    font-family: 'Itc-medium', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8791A0;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.clients_kind__slide__stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 4px;
+}
+
+.clients_kind__slide__quote {
+    font-family: 'Inter-medium', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555C68;
+    margin-top: 20px;
+    padding-left: 39px;
+    position: relative;
+}
+
+.clients_kind__slide__quote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 20px;
+    background-image: url("../../img/section-clients-kind-words/comma-open.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.clients_kind__slide__quote::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 28px;
+    height: 20px;
+    background-image: url("../../img/section-clients-kind-words/comma-close.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 992px) {
+    .clients_kind__slide {
+       padding-left: 30px;
+       padding-right: 30px;
+       margin-left: 7.5px;
+       margin-right: 7.5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .clients_kind__slide {
+        padding: 15px;
+    }
+    .clients_kind__slide__quote {
+        padding-left: 24px;
+    }
+    .clients_kind__slide__quote::before, .clients_kind__slide__quote::after {
+        width: 18px;
+        height: 13px;
+    } 
+}
