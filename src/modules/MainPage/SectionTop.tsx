@@ -22,7 +22,7 @@ const SectionTop: React.FC = () => {
         <div className="container-right">
             <div className={styles.top__inner__top}>
                 <div className={styles.top__inner__left}>
-                    <motion.h1 initial={{ y:"2rem", opacity:0 }} animate={{ y:0, opacity:1 }} transition={{duration:2, type: "ease-in"}} className="title">We’re a Creative Design Agency</motion.h1>
+                    <motion.h1 initial={{ y:"2rem", opacity:0 }} animate={{ y:0, opacity:1 }} transition={{duration:2, ease: "easeIn"}} className="title">We’re a Creative Design Agency</motion.h1>
                     <div className="subtitle">We are delivering top level digital services best experlenced team, just get stared </div>
                     <div className={styles.top__inner__btns}>
                         <a href="#" className={styles.top__inner__btn_get_started}>
@@ -56,8 +56,8 @@ const SectionTop: React.FC = () => {
                     </ul>
                 </div>
                 <div className={styles.top__inner__right}>
-                    <motion.img initial={{ x:"7rem", opacity:0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration:2, type: "ease-in" }} className={styles.top__inner__img_creative} src={creative_img} alt="Creative" />
-                    <motion.img initial={{ x:"14rem", opacity:0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration:2, type: "ease-in" }} className={styles.top__inner__img_chart} src={chart_img} alt="Chart" />
+                    <motion.img initial={{ x:"7rem", opacity:0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration:2, ease: "easeIn" }} className={styles.top__inner__img_creative} src={creative_img} alt="Creative" />
+                    <motion.img initial={{ x:"14rem", opacity:0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration:2, ease: "easeIn" }} className={styles.top__inner__img_chart} src={chart_img} alt="Chart" />
                 </div>
             </div>
         </div>
