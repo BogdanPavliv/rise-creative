@@ -12,7 +12,7 @@ import dataSliderReadyToUse from "../../utils/slider-ready-to-use.json";
 import { sliderReadyToUseSettings } from "../../utils/common.ts";
 import styles from "../../styles/ready-to-use/index.module.scss";
 import { SlideNavigationProps } from '../../types/slider'
-// 
+
 const SectionReadyToUse: React.FC = () => {
     const swiperRef = useRef<SwiperClass | null>(null);
 
