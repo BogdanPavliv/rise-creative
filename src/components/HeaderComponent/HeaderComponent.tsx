@@ -53,7 +53,14 @@ const HeaderComponent: React.FC<isTopOfPageProps> = ({ isTopOfPage }) => {
     <header className="header" style={{backgroundColor: headerBackground}}>
       <div className="container">
         <div className="header__inner">
-          <span className="header__logo"><img src={logo} alt="logo" /></span>
+          <Link 
+            to="top" 
+            spy={true}
+            smooth={true}
+            className="header__logo"
+          >
+            <img src={logo} alt="logo" />
+          </Link>
           <nav className={`header__nav ${isOpen ? "active" : ""}`} ref={menuRef}>
             <ul className="header__nav-list">
               <li className="header__nav-item">
