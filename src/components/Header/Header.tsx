@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import HeaderComponent from "../HeaderComponent/HeaderComponent";
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +16,4 @@ const Header: React.FC = () => {
   return (
     <HeaderComponent isTopOfPage={isTopOfPage} />
   )
-}
-
-export default Header;
+};

@@ -1,5 +1,6 @@
 import logo from "../../img/logo.svg";
 import { Link } from "react-scroll";
+
 export const Footer: React.FC = () => {
   return (
     <footer className="footer">

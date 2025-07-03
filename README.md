@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+# Rise Creative
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Rise Creative** — це сучасний лендинг або портфоліо-сайт, розроблений на базі [React 19](https://react.dev/), з використанням [TypeScript](https://www.typescriptlang.org/) і високопродуктивного білдера [Vite](https://vitejs.dev/). Проєкт побудований з фокусом на анімації, smooth scroll, адаптивність та інтерактивність.
 
-Currently, two official plugins are available:
+## ⚙️ Технологічний стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** + **TypeScript**
+- **Redux Toolkit**
+- **Vite 7** — ультрашвидкий дев-сервер і білдер
+- **SASS** для організації стилів
+- **PostCSS + Autoprefixer** для оптимізації CSS
+- **ESLint + TypeScript ESLint** — суворий контроль якості коду
 
-## Expanding the ESLint configuration
+## 🎯 Основні особливості
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Smooth Scroll** з [react-scroll](https://www.npmjs.com/package/react-scroll)
+- **Анімації** з [Framer Motion](https://www.framer.com/motion/)
+- **Redux Toolkit** для централізованого керування станом
+- **Слайдери** через [React Slick](https://react-slick.neostack.com/) і [Swiper](https://swiperjs.com/)
+- **Модальні вікна** з [FSLightbox](https://fslightbox.com/)
+- **Лічильники** з [React CountUp](https://www.npmjs.com/package/react-countup)
+- **CSS нормалізація** через `normalize.css`
+- **SASS + PostCSS + Autoprefixer** для кросбраузерної стилізації
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Встановлення
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+bash
+git clone https://github.com/BogdanPavliv/rise-creative.git
+cd rise-creative
+npm install
+npm run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Команди
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Скрипт       | Опис                                                                 |
+|--------------|----------------------------------------------------------------------|
+| `npm run dev`     | Запуск локального дев-серверу Vite                                   |
+| `npm run build`   | Компільовування TypeScript і білд продакшен-версії                 |
+| `npm run preview` | Перегляд продакшен-збірки локально                                 |
+| `npm run lint`    | Аналіз коду ESLint з суворими правилами та перевіркою unused директив |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✅ Якість коду
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Проєкт налаштований з використанням:
+- **ESLint** з плагінами `@typescript-eslint`, `react-hooks`, `react-refresh`
+- **TypeScript strict mode**
+- Заборонено ігнорування ESLint правил без використання `--report-unused-disable-directives`
+
+## 🛠️ Розгортання
+
+[Watch demo](https://rise-creative.netlify.app/)
+
+👨‍💻 Автор
+Богдан Павлів — Frontend Developer
+📧 [bogdan.pavliv@gmail.com]
+🌐 [My portfolio](https://bogdan-pavliv.netlify.app)
